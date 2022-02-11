@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PONG</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="pong.js"></script>
+</head>
+<body>
+    <div id=pong>
+        <div id="dvJogo">
+            <div id="dvBola"></div>
+            <div id="dvJogador" class="barra esquerda"></div>
+            <div id="dvCpu" class="barra direita"></div>
+        </div>
+
+        <div id="dvPainel">
+            <div class="itemPainel">
+                <label>Jogador</label>
+                <input type="text" id="txtPontosJogador" value="0" size="1">
+                <label>CPU</label>
+                <input type="text" id="txtPontosCPU" value="0" size="1">
+            </div>
+            <div class="itemPainel">
+                <button id="btIniciar">Iniciar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

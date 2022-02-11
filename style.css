@@ -1,0 +1,101 @@
+body{
+    height: 100vh;
+    position: relative;
+    margin: 0;
+    background-color: #aaa;
+    background-image: url(background/bg01.jpg);
+    background-size: cover;
+}
+
+
+#pong{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    
+}
+
+#dvPainel{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    height: 50px;
+    align-items: center;
+    color: white;
+}
+
+.itemPainel{
+    margin: 5px;
+    
+}
+
+#dvJogo{
+    width: 960px;
+    height: 500px;
+    border: 1px solid black;
+    background-color: black;
+    animation: cores 2s linear infinite alternate-reverse;  
+}
+
+#dvBola{
+    position: absolute;
+    top: 240px;
+    left: 475px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.barra{
+    position: absolute;
+    width: 20px;
+    height: 140px;
+    background-color: white;
+    top: 180px;
+
+}
+
+.esquerda{
+    left: 10px;
+}
+
+.direita{
+    left: 930px;
+}
+
+@keyframes cores {
+    0%{
+        border: 1px solid red;
+        box-shadow: 0px 9px 35px red;
+    }
+    50%{
+        border: 1px solid green;
+        box-shadow: 0px 9px 35px green;
+    }
+    100%{
+        
+        border: 1px solid blue;
+        box-shadow: 0px 9px 35px blue;
+    }
+}
+
+@keyframes cores2{
+    0%, 100%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes rain{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 20% 100%;
+    }
+}
